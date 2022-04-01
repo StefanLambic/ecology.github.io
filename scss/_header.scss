@@ -1,0 +1,58 @@
+//////////// header ////////////
+.header {
+  background-color: $white;
+  @include flexbox(space-between);
+  padding: 15px;
+
+  @include breakpoint(desktop) {
+    @include wrapper();
+    padding: 25px;
+  }
+
+  &__logo {
+    display: block;
+    max-width: 55px;
+    max-height: 55px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__src {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+//////////// nav ////////////
+.nav {
+  &__list {
+    margin: 10px 0 8px 0;
+  }
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__link {
+    @include font(18px, 25px, 700, $primary-color);
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 11px;
+
+    &:hover {
+      color: $button-hover;
+    }
+
+    @include breakpoint(desktop) {
+      margin-left: 40px;
+    }
+  }
+
+  &__link--footer {
+    color: white;
+  }
+}
