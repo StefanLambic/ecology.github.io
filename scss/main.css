@@ -201,7 +201,7 @@ input {
   margin-left: 11px;
 }
 .nav__link:hover {
-  color: #666b8f;
+  color: #7680c7;
 }
 @media only screen and (min-width: 1025px) {
   .nav__link {
@@ -304,8 +304,8 @@ input {
 .form__inp {
   width: 100%;
   display: block;
-  border: 2px solid #a8a8a8;
-  background-color: #404040;
+  border: 2px solid #3C3F42;
+  background-color: #3f3f3f;
   min-height: 40px;
   font-size: 1rem;
   line-height: 18px;
@@ -319,7 +319,7 @@ input {
   right: 2px;
   width: 36px;
   height: 36px;
-  background-color: #404040;
+  background-color: #3f3f3f;
   border: 0;
   color: #fff;
   text-align: center;
@@ -342,7 +342,7 @@ input {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #404040;
+  background-color: #3f3f3f;
   display: inline-block;
   text-decoration: none;
   position: relative;
@@ -354,7 +354,7 @@ input {
   margin: 11px auto;
 }
 .network__svg:hover {
-  fill: #34c9c3;
+  fill: #7680c7;
 }
 
 .hero__col {
@@ -411,7 +411,7 @@ input {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: rgb(20, 26, 2);
+  background-color: #3f3f3f;
   text-decoration: none;
   fill: rgb(41, 145, 122);
 }
@@ -422,7 +422,7 @@ input {
   }
 }
 .hero__network--link:hover {
-  background-color: #666b8f;
+  background-color: #7680c7;
 }
 .hero__network--link svg {
   fill: #fff;
@@ -434,6 +434,14 @@ input {
   .hero__network--link svg {
     height: 35px;
   }
+}
+.hero__active {
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+}
+.hero__active:hover {
+  color: #7680c7;
 }
 .hero__item {
   display: inline-block;
@@ -475,18 +483,20 @@ input {
 }
 .hero__button {
   display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border: 0;
+  border-radius: 5%;
+  background-color: #ED6B5B;
+  background-color: transparent;
   margin: 20px 0 0 15px;
   padding: 10px 40px;
-  text-decoration: none;
-  color: #fff;
-  cursor: pointer;
-  border: 0;
-  background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid #fff;
 }
 .hero__button:hover {
-  background-color: #e43c5c;
-  color: #fff;
+  background-color: #7680c7;
 }
 @media only screen and (min-width: 1025px) {
   .hero__button {
@@ -625,16 +635,18 @@ input {
 }
 .waste__button {
   display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border: 0;
+  border-radius: 5%;
+  background-color: #ED6B5B;
   margin: 20px 0 0 15px;
   padding: 10px 40px;
-  text-decoration: none;
-  color: #fff;
-  cursor: pointer;
-  border: 0;
-  background-color: #ED6B5B;
 }
 .waste__button:hover {
-  background-color: #e43c5c;
+  background-color: #7680c7;
 }
 
 .cards {
@@ -697,16 +709,18 @@ input {
 }
 .cards__contact {
   display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border: 0;
+  border-radius: 5%;
+  background-color: #ED6B5B;
   margin: 20px 0 0 15px;
   padding: 10px 40px;
-  text-decoration: none;
-  color: #fff;
-  cursor: pointer;
-  border: 0;
-  background-color: #ED6B5B;
 }
 .cards__contact:hover {
-  background-color: #e43c5c;
+  background-color: #7680c7;
 }
 .cards__location {
   display: block;
@@ -918,13 +932,15 @@ input {
 }
 .join__button {
   display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border: 0;
+  border-radius: 5%;
+  background-color: #ED6B5B;
   margin: 20px 0 0 15px;
   padding: 10px 40px;
-  text-decoration: none;
-  color: #fff;
-  cursor: pointer;
-  border: 0;
-  background-color: #ED6B5B;
 }
 @media only screen and (min-width: 1025px) {
   .join__button {
@@ -932,8 +948,7 @@ input {
   }
 }
 .join__button:hover {
-  background-color: #e43c5c;
-  color: #fff;
+  background-color: #7680c7;
 }
 
 .carosel-holder {
@@ -977,17 +992,18 @@ input {
 
 .carosel-button {
   display: inline-block;
-  margin: 20px 0 0 15px;
-  padding: 10px 40px;
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
   border: 0;
+  border-radius: 5%;
   background-color: #ED6B5B;
-  margin-bottom: 25px;
+  margin: 20px 0 25px 15px;
+  padding: 10px 40px;
 }
 .carosel-button:hover {
-  background-color: #e43c5c;
+  background-color: #7680c7;
 }
 
 .carosel-title {

@@ -29,14 +29,14 @@
   }
 
   &__top {
-    background-color: #121212;
+    background-color: $footer-clr;
     padding: 80px 0;
   }
 
   &__title {
     font-size: 1.25rem;
     line-height: 22px;
-    color: #fff;
+    color: $white;
     font-weight: 900;
     display: block;
     margin-bottom: 25px;
@@ -45,7 +45,7 @@
   &__text {
     font-size: 1rem;
     line-height: 18px;
-    color: #fff;
+    color: $white;
     display: block;
     margin-bottom: 10px;
     font-weight: 400;
@@ -54,7 +54,7 @@
   }
 
   &__bot {
-    background-color: #000;
+    background-color: $black;
     padding: 40px 0;
   }
 
@@ -86,12 +86,12 @@
   &__inp {
     width: 100%;
     display: block;
-    border: 2px solid #a8a8a8;
-    background-color: #404040;
+    border: 2px solid $secondary-color;
+    background-color: $primary-color;
     min-height: 40px;
     font-size: 1rem;
     line-height: 18px;
-    color: #fff;
+    color: $white;
     padding-right: 55px;
     padding-left: 5px;
   }
@@ -102,9 +102,9 @@
     right: 2px;
     width: 36px;
     height: 36px;
-    background-color: #404040;
+    background-color: $primary-color;
     border: 0;
-    color: #fff;
+    color: $white;
     text-align: center;
     cursor: pointer;
 
@@ -114,7 +114,7 @@
   }
 
   &__svg {
-    fill: #fff;
+    fill: $white;
     height: 20px;
     margin: 7px 0;
   }
@@ -130,20 +130,20 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: #404040;
+    background-color: $primary-color;
     display: inline-block;
     text-decoration: none;
     position: relative;
   }
 
   &__svg {
-    fill: #fff;
+    fill: $white;
     height: 22px;
     display: block;
     margin: 11px auto;
 
     &:hover {
-      fill: #34c9c3;
+      fill: $button-hover;
     }
   }
 }

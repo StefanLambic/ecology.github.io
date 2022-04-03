@@ -51,7 +51,7 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: rgb(20, 26, 2);
+    background-color: $primary-color;
     text-decoration: none;
     fill: rgb(41, 145, 122);
 
@@ -73,6 +73,16 @@
 
     @include breakpoint(desktop) {
       height: 35px;
+    }
+  }
+
+  &__active {
+    font-weight: 700;
+    text-decoration: none;
+    color: $white;
+
+    &:hover {
+      color: $button-hover;
     }
   }
 
@@ -115,19 +125,14 @@
   }
 
   &__button {
-    display: inline-block;
+    @include button();
+    background-color: transparent;
     margin: 20px 0 0 15px;
     padding: 10px 40px;
-    text-decoration: none;
-    color: $white;
-    cursor: pointer;
-    border: 0;
-    background-color: transparent;
-    border: 2px solid white;
+    border: 2px solid $white;
 
     &:hover {
-      background-color: #e43c5c;
-      color: $white;
+      background-color: $button-hover;
     }
 
     @include breakpoint(desktop) {
@@ -263,17 +268,12 @@
   }
 
   &__button {
-    display: inline-block;
+    @include button();
     margin: 20px 0 0 15px;
     padding: 10px 40px;
-    text-decoration: none;
-    color: $white;
-    cursor: pointer;
-    border: 0;
-    background-color: $button-color;
 
     &:hover {
-      background-color: #e43c5c;
+      background-color: $button-hover;
     }
   }
 
@@ -338,17 +338,12 @@
   }
 
   &__contact {
-    display: inline-block;
+    @include button();
     margin: 20px 0 0 15px;
     padding: 10px 40px;
-    text-decoration: none;
-    color: $white;
-    cursor: pointer;
-    border: 0;
-    background-color: $button-color;
 
     &:hover {
-      background-color: #e43c5c;
+      background-color: $button-hover;
     }
   }
 
@@ -547,22 +542,16 @@
   }
 
   &__button {
-    display: inline-block;
+    @include button();
     margin: 20px 0 0 15px;
     padding: 10px 40px;
-    text-decoration: none;
-    color: $white;
-    cursor: pointer;
-    border: 0;
-    background-color: $button-color;
 
     @include breakpoint(desktop) {
       padding: 15px 60px;
     }
 
     &:hover {
-      background-color: #e43c5c;
-      color: $white;
+      background-color: $button-hover;
     }
   }
 }
@@ -599,18 +588,12 @@
 }
 
 .carosel-button {
-  display: inline-block;
-  margin: 20px 0 0 15px;
+  @include button();
+  margin: 20px 0 25px 15px;
   padding: 10px 40px;
-  text-decoration: none;
-  color: $white;
-  cursor: pointer;
-  border: 0;
-  background-color: $button-color;
-  margin-bottom: 25px;
 
   &:hover {
-    background-color: #e43c5c;
+    background-color: $button-hover;
   }
 }
 
